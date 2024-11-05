@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Example Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <!-- Replace 'logo.png' with your logo image -->
+                <img src="logo.png" alt="Logo" class="logo-img">
+            </div>
+            <div class="navbar_list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <!-- Hamburger menu for mobile -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Your journey to learning starts here.</p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated professionals offering world-class courses to enhance your skills and knowledge. Our mission is to provide quality education that empowers our students.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-container">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="course-card-back">
+                            <p>Learn to build responsive websites with HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <h3>Data Science</h3>
+                        </div>
+                        <div class="course-card-back">
+                            <p>Master data analysis, machine learning, and visualization tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-card-inner">
+                        <div class="course-card-front">
+                            <h3>Graphic Design</h3>
+                        </div>
+                        <div class="course-card-back">
+                            <p>Unleash creativity with design principles and the latest software.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more course cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out.</p>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> info@example.com</p>
+                    <p><strong>Phone:</strong> +1 234 567 890</p>
+                    <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+                </div>
+                <div class="contact-map">
+                    <!-- Replace the 'src' with your map link -->
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <h2>Feedback</h2>
+            <form action="/submit_feedback" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+    
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Example Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.navbar_list ul');
+        
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
